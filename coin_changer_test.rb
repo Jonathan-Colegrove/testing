@@ -8,3 +8,11 @@ describe "change" do
     assert_equal([1], coins)
   end
 end
+
+describe "change" do
+  it "returns coins[1] == 1 when given a dime" do
+    coin_changer = CoinChanger.new
+    coins = coin_changer.make_change(10)
+    assert_equal([0, 1], coins)
+  end
+end
