@@ -1,7 +1,7 @@
 require "minitest/autorun"
 require_relative "coin_changer.rb"
 
-describe "change" do
+describe "quarter" do
   it "returns coins[0] == 1 when given a quarter" do
     coin_changer = CoinChanger.new
     coins = coin_changer.make_change(25)
@@ -9,10 +9,18 @@ describe "change" do
   end
 end
 
-describe "change" do
+describe "dime" do
   it "returns coins[1] == 1 when given a dime" do
     coin_changer = CoinChanger.new
     coins = coin_changer.make_change(10)
     assert_equal([0, 1], coins)
+  end
+end
+
+describe "nickel" do
+  it "returns coins[1] == 1 when given a dime" do
+    coin_changer = CoinChanger.new
+    coins = coin_changer.make_change(5)
+    assert_equal([0, 0, 1], coins)
   end
 end
