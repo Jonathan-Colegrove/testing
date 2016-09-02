@@ -10,7 +10,7 @@ describe "quarter" do
 end
 
 describe "dime" do
-  it "returns coins[1] == 1 when given a dime" do
+  it "returns coins[0, 1] == 1 when given a dime" do
     coin_changer = CoinChanger.new
     coins = coin_changer.make_change(10)
     assert_equal([0, 1], coins)
@@ -18,9 +18,17 @@ describe "dime" do
 end
 
 describe "nickel" do
-  it "returns coins[1] == 1 when given a dime" do
+  it "returns coins[0, 0, 1] == 1 when given a nickel" do
     coin_changer = CoinChanger.new
     coins = coin_changer.make_change(5)
     assert_equal([0, 0, 1], coins)
+  end
+end
+
+describe "penny" do
+  it "returns coins[0, 0, 0, 1] == 1 when given a penny" do
+    coin_changer = CoinChanger.new
+    coins = coin_changer.make_change(1)
+    assert_equal([0, 0, 0, 1], coins)
   end
 end

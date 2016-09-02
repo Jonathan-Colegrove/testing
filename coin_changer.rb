@@ -6,6 +6,8 @@ class CoinChanger
       return [0, 1]
     elsif coins == 5
       return [0, 0, 1]
+    elsif coins == 1
+      return [0, 0, 0, 1]
     end
   end
 end
