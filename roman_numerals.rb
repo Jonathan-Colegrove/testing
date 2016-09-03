@@ -12,6 +12,8 @@ class ArabicToRoman
       return conversion[4]
     elsif n == 5
       return conversion[5]
+    elsif n > 5 && n < 9
+      return conversion[5] + (conversion[1]*(n-5))
     end
   end
 end

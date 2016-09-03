@@ -32,3 +32,11 @@ describe "5" do
     assert_equal("V", result)
   end
 end
+
+describe "6" do
+  it "returns VI when given 6" do
+    arabic_to_roman = ArabicToRoman.new
+    result = arabic_to_roman.switch(6)
+    assert_equal("VI", result)
+  end
+end
