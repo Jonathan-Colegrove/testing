@@ -32,3 +32,19 @@ describe "penny" do
     assert_equal([0, 0, 0, 1], coins)
   end
 end
+
+describe "quarters" do
+  it "returns coin_changer[3, 0, 0, 0] == 75 when given 3 quarters" do
+    coin_changer = CoinChanger.new
+    coins = coin_changer.make_change(75)
+    assert_equal([3, 0, 0, 0], coins)
+  end
+end
+# 
+# describe "26" do
+#   it "returns coins[1, 0, 0, 1] == 1 when given a quarter & a penny" do
+#     coin_changer = CoinChanger.new
+#     coins = coin_changer.make_change(26)
+#     assert_equal([1, 0, 0, 1], coins)
+#   end
+# end
