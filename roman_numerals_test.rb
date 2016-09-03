@@ -40,3 +40,11 @@ describe "6" do
     assert_equal("VI", result)
   end
 end
+
+describe "9" do
+  it "returns VI when given 9" do
+    arabic_to_roman = ArabicToRoman.new
+    result = arabic_to_roman.switch(9)
+    assert_equal("IX", result)
+  end
+end
