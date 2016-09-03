@@ -8,6 +8,8 @@ class ArabicToRoman
       return conversion[1]
     elsif n == 0
       return conversion[0]
+    elsif n == 4
+      return conversion[4]
     end
   end
 end
