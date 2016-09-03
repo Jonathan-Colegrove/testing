@@ -10,6 +10,8 @@ class ArabicToRoman
       return conversion[0]
     elsif n == 4
       return conversion[4]
+    elsif n == 5
+      return conversion[5]
     end
   end
 end

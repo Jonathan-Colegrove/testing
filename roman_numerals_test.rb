@@ -24,3 +24,11 @@ describe "4" do
     assert_equal("IV", result)
   end
 end
+
+describe "5" do
+  it "returns V when given 5" do
+    arabic_to_roman = ArabicToRoman.new
+    result = arabic_to_roman.switch(5)
+    assert_equal("V", result)
+  end
+end
