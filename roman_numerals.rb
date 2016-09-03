@@ -6,6 +6,8 @@ class ArabicToRoman
 
     if n == 1
       return conversion[1]
+    elsif n == 0
+      return conversion[0]
     end
   end
 end
