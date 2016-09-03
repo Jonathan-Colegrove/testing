@@ -56,3 +56,11 @@ describe "67" do
     assert_equal([2, 1, 1, 2], coins)
   end
 end
+
+describe "0" do
+  it "returns coins[0, 0, 0, 0] when given 0 cents" do
+    coin_changer = CoinChanger.new
+    coins = coin_changer.make_change(0)
+    assert_equal([0, 0, 0, 0], coins)
+  end
+end
