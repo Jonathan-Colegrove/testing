@@ -14,3 +14,10 @@ describe "fizz" do
     assert_equal("fizz", fb)
   end
 end
+
+describe "buzz" do
+  it "returns buzz when given 5" do
+    fb = FizzBuzz.new.fizz_buzz(5)
+    assert_equal("buzz", fb)
+  end
+end
