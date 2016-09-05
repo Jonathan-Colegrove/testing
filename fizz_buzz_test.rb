@@ -35,3 +35,10 @@ describe "buzz" do
     assert_equal("buzz", fb)
   end
 end
+
+describe "fizzbuzz" do
+  it "returns fizzbuzz when given a multiple of 3 & 5" do
+    fb = FizzBuzz.new.fizz_buzz(30)
+    assert_equal("fizzbuzz", fb)
+  end
+end
