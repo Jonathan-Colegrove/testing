@@ -21,3 +21,10 @@ describe "buzz" do
     assert_equal("buzz", fb)
   end
 end
+
+describe "fizz" do
+  it "returns fizz when given multiples of 3" do
+    fb = FizzBuzz.new.fizz_buzz(6)
+    assert_equal("fizz", fb)
+  end
+end

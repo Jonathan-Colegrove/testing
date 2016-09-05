@@ -1,6 +1,6 @@
 class FizzBuzz
   def fizz_buzz(n)
-    if n == 3
+    if n % 3 == 0
       return "fizz"
     elsif n == 5
       return "buzz"
