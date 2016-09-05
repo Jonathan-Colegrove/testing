@@ -1,5 +1,9 @@
 class FizzBuzz
   def fizz_buzz(n)
-    return n
+    if n == 3
+      return "fizz"
+    else
+      return n
+    end
   end
 end
