@@ -2,7 +2,7 @@ class FizzBuzz
   def fizz_buzz(n)
     if n % 3 == 0
       return "fizz"
-    elsif n == 5
+    elsif n % 5 == 0
       return "buzz"
     else
       return n
