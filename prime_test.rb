@@ -6,9 +6,7 @@ describe "prime" do
     prime = PrimeNumber.new.prime_num(1)
     assert_equal(2, prime)
   end
-end
 
-describe "prime" do
   it "returns the nth prime number" do
     prime = PrimeNumber.new.prime_num()
     assert_equal(2, prime)

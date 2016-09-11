@@ -1,0 +1,3 @@
+def anagram(word)
+  []
+end
