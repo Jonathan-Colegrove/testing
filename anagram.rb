@@ -2,7 +2,9 @@ def anagram(word, array)
   list = []
   array.each do |l|
     letters = l.split("")
-    if word.split("").sort == letters.sort
+    if word == l
+      next
+    elsif word.split("").sort == letters.sort
       list << l
     end
   end
