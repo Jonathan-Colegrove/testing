@@ -7,6 +7,6 @@ describe "tape" do
   end
 
   it "returns orange if the options are apple banana orange" do
-    assert_equal "o", (anagram %w{apple banana orange})
+    assert_equal ["orange"], anagram("gnaero", %w{apple banana orange})
   end
 end

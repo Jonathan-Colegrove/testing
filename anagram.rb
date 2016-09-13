@@ -3,7 +3,7 @@ def anagram(word, array)
   array.each do |l|
     letters = l.split("")
     if word.split("").sort == letters.sort
-      return word.to_a
+      list << l
     end
   end
   list
