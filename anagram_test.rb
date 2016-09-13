@@ -17,4 +17,8 @@ describe "tape" do
   it "returns 'cron' if the options are corn dark Corn rank CORN cron park" do
     assert_equal ["cron"], anagram("corn", %w(corn dark Corn rank CORN cron park))
   end
+
+  it "returns 'cron' & 'cRON' if the options are corn dark Corn rank CORN cron park cRON" do
+    assert_equal %w(cron cRON), anagram("corn", %w(corn dark Corn rank CORN cron park cRON))
+  end
 end
